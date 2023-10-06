@@ -40,9 +40,13 @@ func (s ShoppingCart) TotalPrice(totalPrice float64) {
 	panic("implement me")
 }
 
-func (s ShoppingCart) NumberOfItems() {
-	//TODO implement me
-	panic("implement me")
+func (s ShoppingCart) NumberOfItems() int {
+	items := s.items
+	var numberOfItems int
+	for _, item := range items {
+		numberOfItems += item.quantity
+	}
+	return numberOfItems
 }
 
 func (s ShoppingCart) CreateItem(name string, price float64, quantity int, deleted bool) *Item {

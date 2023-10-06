@@ -11,7 +11,7 @@ type ShoppingCartInterface interface {
 	RestoreItem()
 	ForgetItem()
 	TotalPrice(totalPrice float64)
-	NumberOfItems()
+	NumberOfItems() int
 	CreateItem(name string, price float64, quantity int, deleted bool) *Item
 }
 
