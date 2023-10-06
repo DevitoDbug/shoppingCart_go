@@ -1,4 +1,8 @@
-package ShoppingCartInterface
+package main
+
+import (
+	"fmt"
+)
 
 type ShoppingCart interface {
 	GetAllItems()
@@ -8,8 +12,9 @@ type ShoppingCart interface {
 	ForgetItem()
 	TotalPrice(totalPrice float64)
 	NumberOfItems()
+	CreateItem()
 }
 
 func main() {
-
+	fmt.Println("Hello world!")
 }
