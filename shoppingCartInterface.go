@@ -4,8 +4,8 @@ import (
 	"fmt"
 )
 
-type ShoppingCart interface {
-	GetAllItems()
+type ShoppingCartInterface interface {
+	GetAllItems() []Item
 	AddItemsToCart()
 	RemoveItem()
 	RestoreItem()

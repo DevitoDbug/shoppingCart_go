@@ -11,9 +11,8 @@ type ShoppingCart struct {
 	items []Item
 }
 
-func (s ShoppingCart) GetAllItems() {
-	//TODO implement me
-	panic("implement me")
+func (s ShoppingCart) GetAllItems() []Item {
+	return s.items
 }
 
 func (s ShoppingCart) AddItemsToCart() {
