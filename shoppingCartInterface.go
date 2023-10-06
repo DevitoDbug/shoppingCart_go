@@ -6,12 +6,12 @@ import (
 
 type ShoppingCartInterface interface {
 	GetAllItems() []Item
-	AddItemsToCart()
-	RemoveItem()
-	RestoreItem()
-	ForgetItem()
-	TotalPrice(totalPrice float64)
-	NumberOfItems() int
+	AddItemsToCart(item Item)
+	RemoveItem(itemId string)
+	RestoreItem(itemId string)
+	ForgetItem(itemId string)
+	TotalPrice() (totalPrice float64)
+	NumberOfItems() (numberOfItems int)
 	CreateItem(name string, price float64, quantity int, deleted bool) *Item
 }
 
