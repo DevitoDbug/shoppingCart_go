@@ -45,7 +45,13 @@ func (s ShoppingCart) NumberOfItems() {
 	panic("implement me")
 }
 
-func (s ShoppingCart) CreateItem() {
-	//TODO implement me
-	panic("implement me")
+func (s ShoppingCart) CreateItem(name string, price float64, quantity int, deleted bool) *Item {
+	item := &Item{
+		itemId:   "something",
+		name:     name,
+		price:    price,
+		quantity: quantity,
+		deleted:  deleted,
+	}
+	return item
 }

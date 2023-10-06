@@ -12,7 +12,7 @@ type ShoppingCartInterface interface {
 	ForgetItem()
 	TotalPrice(totalPrice float64)
 	NumberOfItems()
-	CreateItem()
+	CreateItem(name string, price float64, quantity int, deleted bool) *Item
 }
 
 func main() {
